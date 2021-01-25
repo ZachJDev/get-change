@@ -8,9 +8,9 @@ const getChange = (change) => {
   ];
   const final = {};
   for (let i = 0; i < coins.length; i++) {
-    const diff = change > 0 ? Math.floor(change / coins[i].val) : 0
-    final[coins[i].name] = diff;
-    change -= diff * coins[i].val
+    const numCoins = change > 0 ? Math.floor(change / coins[i].val) : 0
+    final[coins[i].name] = numCoins;
+    change -= numCoins * coins[i].val
   }
   return final
 };
