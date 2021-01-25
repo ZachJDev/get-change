@@ -1,5 +1,4 @@
 const getChange = (change) => {
-    change = Math.floor(change)
   const coins = [
     { name: 'quarters', val: 25 },
     { name: 'dimes', val: 10 },
