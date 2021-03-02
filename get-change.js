@@ -7,7 +7,7 @@ const getChange = (change) => {
   ];
   const final = {};
   for (let i = 0; i < coins.length; i++) {
-    const numCoins = change > 0 ? Math.floor(change / coins[i].val) : 0
+    const numCoins = Math.floor(change / coins[i].val)
     final[coins[i].name] = numCoins;
     change -= numCoins * coins[i].val
   }
